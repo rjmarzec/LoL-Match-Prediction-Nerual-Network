@@ -8,15 +8,15 @@ The project involved scraping and formatting ranked games of LoL during patch 9.
 
 File Descriptions:
 
-*Main Scripts\match_data_collector.py - The initial match data collection script.
-*Main Scripts\match_data_formatter.py - The script that pulled pulled important information out from matches and prepared it as input for the neural network.
-*Main Scripts\neural_net_example.py - Sample TensorFlow neural network used to base project neural network off of.
-*Main Scripts\neural_net_input_scraper.py - The script that prepared the outcomes of matches (win or loss) as another input for the neural network.
-*Main Scripts\neural_net.py - The neural network that was the data was fed into and run.
+-Main Scripts\match_data_collector.py - The initial match data collection script.  
+-Main Scripts\match_data_formatter.py - The script that pulled pulled important information out from matches and prepared it as input for the neural network.  
+-Main Scripts\neural_net_example.py - Sample TensorFlow neural network used to base project neural network off of.  
+-Main Scripts\neural_net_input_scraper.py - The script that prepared the outcomes of matches (win or loss) as another input for the neural network.  
+-Main Scripts\neural_net.py - The neural network that was the data was fed into and run.  
 
-*input_data.txt - Sorted match data as a list to be readied for input.
-*input_labels.txt - Classifications of a win or loss for the matches found in input_data.txt.
-main.py - Temporary file used to run scripts.
-*README.md - Project README file.
-*requirements.txt - Versions of API's used.
-*Robert Marzec AP Research Paper.pdf - Full AP Research Paper submitted to the college board
+-input_data.txt - Sorted match data as a list to be readied for input.  
+-input_labels.txt - Classifications of a win or loss for the matches found in input_data.txt.
+main.py - Temporary file used to run scripts.  
+-README.md - Project README file.  
+-requirements.txt - Versions of API's used.  
+-Robert Marzec AP Research Paper.pdf - Full AP Research Paper submitted to the college board . 
