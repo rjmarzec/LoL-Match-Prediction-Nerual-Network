@@ -8,6 +8,7 @@ The project involved scraping and formatting ranked games of LoL during patch 9.
 
 File Descriptions:
 
+
 -Main Scripts\match_data_collector.py - The initial match data collection script.
 
 -Main Scripts\match_data_formatter.py - The script that pulled pulled important information out from matches and prepared it as input for the neural network.
