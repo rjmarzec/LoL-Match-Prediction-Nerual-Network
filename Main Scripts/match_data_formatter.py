@@ -90,14 +90,6 @@ def format_previous_match_data(match_data, players_id_in_match, found_match):
 		output_string += str(player_data['stats']['totalTimeCrowdControlDealt']) + ','
 		output_string += str(player_data['stats']['champLevel']) + ','
 
-		'''
-		# since not all matches will have deltas or the same number of deltas, they will be exlcuded to avoid potential issues
-		# player's 'timeline' stats
-		output_string += str(player_data['timeline']['creepsPerMinDeltas']['0-10']) + ','
-		output_string += str(player_data['timeline']['xpPerMinDeltas']['0-10']) + ','
-		output_string += str(player_data['timeline']['goldPerMinDeltas']['0-10']) + ','
-		output_string += str(player_data['timeline']['damageTakenPerMinDeltas']['0-10']) + ','
-		'''
 	else:
 		# fills in 0 for all 25 datapoints if the player's previous match was not very recent
 		for i in range(0, 25):
@@ -210,18 +202,6 @@ while current_match_row <= 2002 and not unexpected_api_error_occured:
 			players_ranked_information = watcher.league.positions_by_summoner(region='na1', encrypted_summoner_id=players_summoner_id)
 			
 			formatted_output += format_ranked_stats_data(players_ranked_information)
-
-			'''
-			# Test Print statements to both see if requesting API information is good and to see the formatting of said data
-			print(players_previous_match_from_matchlist)
-			print('@@@@@@@@@@')
-			print(players_previous_match)
-			print('##########')
-			print(players_ranked_information)
-			print('**********')
-			print(participantIdentity)
-			print(players_id_in_match)
-			'''
 
 		if not unexpected_api_error_occured:
 			# Log the formatted data in the spreadsheet, and increment the row counter.
